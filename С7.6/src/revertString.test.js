@@ -1,13 +1,13 @@
-import { reverseString } from './reverseStr';
+import { revertString } from './revertStr';
 
-describe('test for reverseString function', () => {
+describe('test for revertString function', () => {
     const firstStr = "Hello!";
     const revFirstStr = "!olleH";
     const secondStr = "Hello, world!";
     const revSecondStr = "!dlrow ,olleH";
 
     it ('should return reversed "Hello!" and "Hello, world!"', () => {
-        expect(reverseString(firstStr)).toBe(`The result is ${revFirstStr}`);
-        expect(reverseString(secondStr)).toBe(`The result is ${revSecondStr}`)
+        expect(revertString(firstStr)).toBe(`The result is ${revFirstStr}`);
+        expect(revertString(secondStr)).toBe(`The result is ${revSecondStr}`)
     });
 })
