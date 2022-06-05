@@ -1,4 +1,8 @@
-export function revertString(string) {
-    const revertString = string.split("").reverse().join("");
-    return "The result is " + revertString;
+export function revertString(str) {
+  let revertedStr = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    revertedStr += str[i];
+  }
+  return revertedStr;
 }
